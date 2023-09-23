@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. TownInfo", "08. TownInf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. CharsToString", "09. CharsToString\09. CharsToString.csproj", "{13856D4F-C9AE-4AB1-A3D2-070852FF4511}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. LowerOrUpper", "10. LowerOrUpper\10. LowerOrUpper.csproj", "{10EF668D-C4FF-4726-BB8C-B50EC0ABE27F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{13856D4F-C9AE-4AB1-A3D2-070852FF4511}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13856D4F-C9AE-4AB1-A3D2-070852FF4511}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13856D4F-C9AE-4AB1-A3D2-070852FF4511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10EF668D-C4FF-4726-BB8C-B50EC0ABE27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10EF668D-C4FF-4726-BB8C-B50EC0ABE27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10EF668D-C4FF-4726-BB8C-B50EC0ABE27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10EF668D-C4FF-4726-BB8C-B50EC0ABE27F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
