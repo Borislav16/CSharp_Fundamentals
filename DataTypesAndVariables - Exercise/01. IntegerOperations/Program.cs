@@ -15,6 +15,7 @@ namespace _01._IntegerOperations
             int divide = add / thirdNumber;
             int multiply = divide * fourthNumber;
             Console.WriteLine(multiply);
+            
 
         }
     }
