@@ -10,6 +10,7 @@ namespace _03._Elevator
             int capacity = int.Parse(Console.ReadLine());
             int courses = (int)Math.Ceiling((double)countOfPerson / capacity);
             Console.WriteLine(courses);
+
         }
     }
 }
