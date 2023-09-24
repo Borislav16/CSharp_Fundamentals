@@ -7,7 +7,7 @@ namespace _02._SumDigits
         static void Main(string[] args)
         {
             int number = int.Parse(Console.ReadLine());
-            int sum = 0;
+            int sum = 1 -1;
             while(number > 0)
             {
                 int digit = number % 10;

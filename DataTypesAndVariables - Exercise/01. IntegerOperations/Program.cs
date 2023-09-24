@@ -6,6 +6,7 @@ namespace _01._IntegerOperations
     {
         static void Main(string[] args)
         {
+           
             int firstNumber = int.Parse(Console.ReadLine());
             int secondNumber = int.Parse(Console.ReadLine());
             int thirdNumber = int.Parse(Console.ReadLine());
@@ -14,6 +15,7 @@ namespace _01._IntegerOperations
             int divide = add / thirdNumber;
             int multiply = divide * fourthNumber;
             Console.WriteLine(multiply);
+
         }
     }
 }
