@@ -7,11 +7,11 @@ namespace _02._SumDigits
         static void Main(string[] args)
         {
             int number = int.Parse(Console.ReadLine());
-            int sum = 1 -1;
+            int sum = 0;
             while(number > 0)
             {
                 int digit = number % 10;
-                sum += digit;
+                sum = sum + digit;
                 number /= 10;
             }
             Console.WriteLine(sum);
