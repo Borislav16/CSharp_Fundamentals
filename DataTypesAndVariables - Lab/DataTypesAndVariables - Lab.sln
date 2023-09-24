@@ -15,13 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. SpecialNumbers", "05. S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. ReversedChars", "06. ReversedChars\06. ReversedChars.csproj", "{08B26FB1-F84F-47F4-86A3-29EB5C626028}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. ConcatNames", "07. ConcatNames\07. ConcatNames.csproj", "{C0AF7432-52D8-49DC-9B35-B8B66A054974}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. ConcatNames", "07. ConcatNames\07. ConcatNames.csproj", "{C0AF7432-52D8-49DC-9B35-B8B66A054974}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. TownInfo", "08. TownInfo\08. TownInfo.csproj", "{498ECAA1-D56C-4DDC-B581-D47136FE3A7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08. TownInfo", "08. TownInfo\08. TownInfo.csproj", "{498ECAA1-D56C-4DDC-B581-D47136FE3A7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. CharsToString", "09. CharsToString\09. CharsToString.csproj", "{13856D4F-C9AE-4AB1-A3D2-070852FF4511}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09. CharsToString", "09. CharsToString\09. CharsToString.csproj", "{13856D4F-C9AE-4AB1-A3D2-070852FF4511}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. LowerOrUpper", "10. LowerOrUpper\10. LowerOrUpper.csproj", "{10EF668D-C4FF-4726-BB8C-B50EC0ABE27F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10. LowerOrUpper", "10. LowerOrUpper\10. LowerOrUpper.csproj", "{10EF668D-C4FF-4726-BB8C-B50EC0ABE27F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. RefactorVolumeOfPyramid", "11. RefactorVolumeOfPyramid\11. RefactorVolumeOfPyramid.csproj", "{31AA60F4-7A15-4F03-B4A6-3AAD42809779}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{10EF668D-C4FF-4726-BB8C-B50EC0ABE27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10EF668D-C4FF-4726-BB8C-B50EC0ABE27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10EF668D-C4FF-4726-BB8C-B50EC0ABE27F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31AA60F4-7A15-4F03-B4A6-3AAD42809779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31AA60F4-7A15-4F03-B4A6-3AAD42809779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31AA60F4-7A15-4F03-B4A6-3AAD42809779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31AA60F4-7A15-4F03-B4A6-3AAD42809779}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
