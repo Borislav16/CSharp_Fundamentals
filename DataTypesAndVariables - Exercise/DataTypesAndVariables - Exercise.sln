@@ -11,13 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Elevator", "03. Elevato
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. SumOfChars", "04. SumOfChars\04. SumOfChars.csproj", "{64AB2F1E-496E-497E-A88C-22E97EEFD329}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. PrintPartOfASCIITable", "05. PrintPartOfASCIITable\05. PrintPartOfASCIITable.csproj", "{6D93DC5F-7648-42BD-A3C4-BB964DF28B78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. PrintPartOfASCIITable", "05. PrintPartOfASCIITable\05. PrintPartOfASCIITable.csproj", "{6D93DC5F-7648-42BD-A3C4-BB964DF28B78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. TriplesofLatinLetters", "06. TriplesofLatinLetters\06. TriplesofLatinLetters.csproj", "{6C8FE593-C2CE-4A3C-8259-5293B651D170}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. TriplesofLatinLetters", "06. TriplesofLatinLetters\06. TriplesofLatinLetters.csproj", "{6C8FE593-C2CE-4A3C-8259-5293B651D170}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. WaterOverflow", "07. WaterOverflow\07. WaterOverflow.csproj", "{3FFEF998-7A01-4148-B6C2-5F8B93D47CCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. WaterOverflow", "07. WaterOverflow\07. WaterOverflow.csproj", "{3FFEF998-7A01-4148-B6C2-5F8B93D47CCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. BeerKegs", "08. BeerKegs\08. BeerKegs.csproj", "{0CCABDFD-B0FC-423F-B2B5-2DA8EB5A2C45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08. BeerKegs", "08. BeerKegs\08. BeerKegs.csproj", "{0CCABDFD-B0FC-423F-B2B5-2DA8EB5A2C45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. SpiceMustFlow", "09. SpiceMustFlow\09. SpiceMustFlow.csproj", "{1257538E-0B52-4E06-B6FF-44E84F9CE6F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{0CCABDFD-B0FC-423F-B2B5-2DA8EB5A2C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CCABDFD-B0FC-423F-B2B5-2DA8EB5A2C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CCABDFD-B0FC-423F-B2B5-2DA8EB5A2C45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1257538E-0B52-4E06-B6FF-44E84F9CE6F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1257538E-0B52-4E06-B6FF-44E84F9CE6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1257538E-0B52-4E06-B6FF-44E84F9CE6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1257538E-0B52-4E06-B6FF-44E84F9CE6F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
