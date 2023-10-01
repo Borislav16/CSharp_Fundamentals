@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Train", "01. Train\01. 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. CommonElements", "02. CommonElements\02. CommonElements.csproj", "{EB3BFD3F-06FF-49D1-A9D5-3FDC860CEB50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. ZigZagArrays", "03. ZigZagArrays\03. ZigZagArrays.csproj", "{D7A23DE8-353A-4FBE-948A-D8FA574501B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EB3BFD3F-06FF-49D1-A9D5-3FDC860CEB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB3BFD3F-06FF-49D1-A9D5-3FDC860CEB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB3BFD3F-06FF-49D1-A9D5-3FDC860CEB50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7A23DE8-353A-4FBE-948A-D8FA574501B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7A23DE8-353A-4FBE-948A-D8FA574501B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7A23DE8-353A-4FBE-948A-D8FA574501B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7A23DE8-353A-4FBE-948A-D8FA574501B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
