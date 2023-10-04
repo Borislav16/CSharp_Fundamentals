@@ -5,30 +5,36 @@ namespace _04._Array_Rotation
 {
     internal class Program
     {
-        // 20/100 in judge
+        // 60/100 in judge
         static void Main(string[] args)
         {
-        //    int[] array = Console.ReadLine()
-        //                   .Split(' ')
-        //                   .Select(int.Parse)
-        //                   .ToArray();
-        //    int index = int.Parse(Console.ReadLine());
+            int[] numArray = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-        //    for (int i = 1; i < array.Length - index; i++)
-        //    {
-        //        int firstElement = array[0];
-        //        for (int j = 0; j < array.Length - 1; j++)
-        //        {
-        //            array[j] = array[j + 1];
-        //        }
-        //        array[array.Length - 1] = firstElement;
-        //    }
+            int numRotations = int.Parse(Console.ReadLine());
+            int counterOne = numRotations - 1;
+            int counterTwo = numArray.Length - 1;
+            int[] switchedArray = new int[numArray.Length];
 
-            
-        //    foreach (int element in array)
-        //    {
-        //        Console.Write(element + " ");
-        //    }
+
+
+            for (int i = numArray.Length - 1; i >= 0; i--)
+            {
+
+                if (counterOne >= 0)
+                {
+
+                    switchedArray[i] = numArray[counterOne];
+                    counterOne--;
+                }
+                else
+                {
+                    switchedArray[i] = numArray[counterTwo];
+                    counterTwo--;
+                }
+
+            }
+
+            Console.WriteLine(String.Join(" ", switchedArray));
 
         }
     }
