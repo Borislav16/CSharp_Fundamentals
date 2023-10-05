@@ -39,7 +39,7 @@ namespace _09._GreaterofTwoValues
             for (int i = 0; i < shortLength; i++)
             {
                 if (first[i] > second[i])
-                {
+                {   
                     return first;
                 }
                 else if (second[i] > first[i])
