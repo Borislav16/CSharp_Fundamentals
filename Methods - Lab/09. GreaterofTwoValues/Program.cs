@@ -48,7 +48,14 @@ namespace _09._GreaterofTwoValues
                 }
             }
 
-            return first.Length > second.Length ? first : second;
+            if(first.Length > second.Length)
+            {
+                return first;
+            }
+            else
+            {
+                return second;
+            }
         }
     }
 }
