@@ -5,19 +5,21 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. SmallestOfThreeNumbers", "01. SmallestOfThreeNumbers\01. SmallestOfThreeNumbers.csproj", "{C8B8A33A-4817-434B-ACFE-548EB841D3AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. VowelsCount", "02. VowelsCount\02. VowelsCount.csproj", "{86AFC0A9-AAF8-49A1-96B1-70B1ACDCAB22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. VowelsCount", "02. VowelsCount\02. VowelsCount.csproj", "{86AFC0A9-AAF8-49A1-96B1-70B1ACDCAB22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. CharactersInRange", "03. CharactersInRange\03. CharactersInRange.csproj", "{BA923E55-F538-4A7D-A786-AFDF38F61EE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. CharactersInRange", "03. CharactersInRange\03. CharactersInRange.csproj", "{BA923E55-F538-4A7D-A786-AFDF38F61EE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. PasswordValidator", "04. PasswordValidator\04. PasswordValidator.csproj", "{75656E63-5DBE-4AB7-942F-80B098CEB779}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. PasswordValidator", "04. PasswordValidator\04. PasswordValidator.csproj", "{75656E63-5DBE-4AB7-942F-80B098CEB779}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. AddAndSubtract", "05. AddAndSubtract\05. AddAndSubtract.csproj", "{C5C1191C-9F6B-4C40-B879-02BFA9633163}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. AddAndSubtract", "05. AddAndSubtract\05. AddAndSubtract.csproj", "{C5C1191C-9F6B-4C40-B879-02BFA9633163}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. MiddleCharacters", "06. MiddleCharacters\06. MiddleCharacters.csproj", "{405C7245-7AF8-49ED-ACFE-DCBC1BAC1D43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. MiddleCharacters", "06. MiddleCharacters\06. MiddleCharacters.csproj", "{405C7245-7AF8-49ED-ACFE-DCBC1BAC1D43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. NxNMatrix", "07. NxNMatrix\07. NxNMatrix.csproj", "{8EC88BD9-577D-4BF8-9D67-AF02F6DBB365}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. NxNMatrix", "07. NxNMatrix\07. NxNMatrix.csproj", "{8EC88BD9-577D-4BF8-9D67-AF02F6DBB365}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. FactorialDivision", "08. FactorialDivision\08. FactorialDivision.csproj", "{559CEB84-C70C-4C42-A103-5051911B5F5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08. FactorialDivision", "08. FactorialDivision\08. FactorialDivision.csproj", "{559CEB84-C70C-4C42-A103-5051911B5F5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. PalindromeIntegers", "09. PalindromeIntegers\09. PalindromeIntegers.csproj", "{D1D3A3C3-D372-4C3B-BED2-D90B9D0CEBFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{559CEB84-C70C-4C42-A103-5051911B5F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{559CEB84-C70C-4C42-A103-5051911B5F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{559CEB84-C70C-4C42-A103-5051911B5F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1D3A3C3-D372-4C3B-BED2-D90B9D0CEBFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1D3A3C3-D372-4C3B-BED2-D90B9D0CEBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1D3A3C3-D372-4C3B-BED2-D90B9D0CEBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1D3A3C3-D372-4C3B-BED2-D90B9D0CEBFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
