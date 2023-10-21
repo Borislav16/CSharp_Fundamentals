@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. GuineaPig", "01. Guinea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. TheLift", "02. TheLift\02. TheLift.csproj", "{54EECCB2-1D7F-4579-946E-455D9C80AF11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. MovingTarget", "03. MovingTarget\03. MovingTarget.csproj", "{83E18731-2261-48F6-B459-538F76E632CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{54EECCB2-1D7F-4579-946E-455D9C80AF11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54EECCB2-1D7F-4579-946E-455D9C80AF11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54EECCB2-1D7F-4579-946E-455D9C80AF11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83E18731-2261-48F6-B459-538F76E632CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E18731-2261-48F6-B459-538F76E632CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E18731-2261-48F6-B459-538F76E632CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E18731-2261-48F6-B459-538F76E632CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
