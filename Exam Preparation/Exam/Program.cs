@@ -10,7 +10,28 @@ namespace Exam
     {
         static void Main(string[] args)
         {
+            double budget = double.Parse(Console.ReadLine());
+            int students = int.Parse(Console.ReadLine());
+            double priceForPackageFlour = double.Parse(Console.ReadLine());
+            double priceForSingleEgg = double.Parse(Console.ReadLine());
+            double PriceForSingleApron = double.Parse(Console.ReadLine());
+            double freePackage = students / 5;
+            Math.Floor(freePackage);
 
+
+            double priceForApron = (PriceForSingleApron * Math.Ceiling(students * 1.2));
+            double priceForEggs = (priceForSingleEgg * (10 * students));
+            double priceForFlour = (priceForPackageFlour * (students - freePackage));
+
+            double total = priceForApron + priceForEggs + priceForFlour;
+            if (total <= budget)
+            {
+                Console.WriteLine($"Items purchased for {total:F2}$.");
+            }
+            else
+            {
+                Console.WriteLine($"{total - budget:F2}$ more needed.");
+            }
         }
     }
 }
@@ -149,25 +170,25 @@ namespace Exam
 // 1
 
 
-//double budget = double.Parse(Console.ReadLine());
-//int students = int.Parse(Console.ReadLine());
-//double priceForPackageFlour = double.Parse(Console.ReadLine());
-//double priceForSingleEgg = double.Parse(Console.ReadLine());
-//double PriceForSingleApron = double.Parse(Console.ReadLine());
-//double freePackage = students / 5;
-//Math.Floor(freePackage);
+//
+//
+//
+//
+//
+//
+//
 
 
-//double priceForApron = (PriceForSingleApron * Math.Ceiling(students * 1.2));
-//double priceForEggs = (priceForSingleEgg * (10 * students));
-//double priceForFlour = (priceForPackageFlour * (students - freePackage));
+//
+//
+//
 
-//double total = priceForApron + priceForEggs + priceForFlour;
-//if(total <= budget)
-//{
-//    Console.WriteLine($"Items purchased for {total:F2}$.");
-//}
-//else
-//{
-//    Console.WriteLine($"{total - budget:F2}$ more needed.");
-//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
