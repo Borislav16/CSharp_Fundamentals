@@ -10,29 +10,58 @@ namespace Exam
     {
         static void Main(string[] args)
         {
-            double budget = double.Parse(Console.ReadLine());
-            int students = int.Parse(Console.ReadLine());
-            double priceForPackageFlour = double.Parse(Console.ReadLine());
-            double priceForSingleEgg = double.Parse(Console.ReadLine());
-            double PriceForSingleApron = double.Parse(Console.ReadLine());
-            double freePackage = students / 5;
-            Math.Floor(freePackage);
+            //double budget = double.Parse(Console.ReadLine());
+            //int students = int.Parse(Console.ReadLine());
+            //double priceForPackageFlour = double.Parse(Console.ReadLine());
+            //double priceForSingleEgg = double.Parse(Console.ReadLine());
+            //double PriceForSingleApron = double.Parse(Console.ReadLine());
+            //double freePackage = students / 5;
+            //Math.Floor(freePackage);
 
 
-            double priceForApron = (PriceForSingleApron * Math.Ceiling(students * 1.2));
-            double priceForEggs = (priceForSingleEgg * (10 * students));
-            double priceForFlour = (priceForPackageFlour * (students - freePackage));
+            //double priceForApron = (PriceForSingleApron * Math.Ceiling(students * 1.2));
+            //double priceForEggs = (priceForSingleEgg * (10 * students));
+            //double priceForFlour = (priceForPackageFlour * (students - freePackage));
 
-            double total = priceForApron + priceForEggs + priceForFlour;
-            if (total <= budget)
+            //double total = priceForApron + priceForEggs + priceForFlour;
+            //if (total <= budget)
+            //{
+            //    Console.WriteLine($"Items purchased for {total:F2}$.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{total - budget:F2}$ more needed.");
+            //}
+            List<string> friendList = Console.ReadLine().Split(", ").ToList();
+            int countOfBlackListed = 0;
+            int countOfLost = 0;
+            string input = default;
+            while ((input = Console.ReadLine()) != "Report")
             {
-                Console.WriteLine($"Items purchased for {total:F2}$.");
+                string[] command = input.Split(' ');
+                if (command[0] == "Blacklist")
+                {
+                    string name = command[1];
+                    bool IsTrue = friendList.Contains(name);
+                    if (IsTrue == true)
+                    {
+                        for (int i = 0; i < friendList.Count; i++)
+                        {
+                            if (friendList[i] == name)
+                            {
+                                friendList[i] = "Blacklisted";
+                                Console.WriteLine($"{name} was blacklisted.");
+                                countOfBlackListed++;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{name} was not found.");
+                    }
+                }
+
             }
-            else
-            {
-                Console.WriteLine($"{total - budget:F2}$ more needed.");
-            }
-        }
     }
 }
 
@@ -100,71 +129,71 @@ namespace Exam
 // 2
 
 
-//List<string> friendList = Console.ReadLine().Split(", ").ToList();
-//int countOfBlackListed = 0;
-//int countOfLost = 0;
-//string input = default;
-//while((input = Console.ReadLine()) != "Report")
-//{
-//    string[] command = input.Split(' ');
-//    if (command[0] == "Blacklist")
-//    {
-//        string name = command[1];
-//        bool IsTrue = friendList.Contains(name);
-//        if(IsTrue == true)
-//        {
-//            for (int i = 0; i < friendList.Count; i++)
-//            {
-//                if(friendList[i] == name)
-//                {
-//                    friendList[i] = "Blacklisted";
-//                    Console.WriteLine($"{name} was blacklisted.");
-//                    countOfBlackListed++;
-//                }
-//            }
-//        }
-//        else
-//        {
-//            Console.WriteLine($"{name} was not found.");
-//        }
-//    }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
-//    else if (command[0] == "Error")
-//    {
-//        int index = int.Parse(command[1]);
-//        if((index >= 0 && index < friendList.Count)
-//            && friendList[index] != "Blacklisted" 
-//            && friendList[index] != "Lost")
-//        {
-//            for (int i = 0; i < friendList.Count; i++)
-//            {
-//                if (i == index)
-//                {
-//                    string lostName = friendList[i];
-//                    friendList[i] = "Lost";
-//                    Console.WriteLine($"{lostName} was lost due to an error.");
-//                    countOfLost++;
-//                }
-//            }
-//        }
-//    }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-//    else if (command[0] == "Change")
-//    {
-//        int index = int.Parse(command[1]);
-//        if(index >= 0  &&  index < friendList.Count)
-//        {
-//            string oldName = friendList[index];
-//            string newName = command[2];
-//            friendList[index] = newName;
-//            Console.WriteLine($"{oldName} changed his username to {newName}.");
-//        }
-//    }
-//}
-//Console.WriteLine($"Blacklisted names: {countOfBlackListed}");
-//Console.WriteLine($"Lost names: {countOfLost}");
-//Console.WriteLine(string.Join(" ", friendList));
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 // 1
