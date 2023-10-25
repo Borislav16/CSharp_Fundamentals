@@ -32,192 +32,96 @@ namespace Exam
             //{
             //    Console.WriteLine($"{total - budget:F2}$ more needed.");
             //}
-            List<string> friendList = Console.ReadLine().Split(", ").ToList();
-            int countOfBlackListed = 0;
-            int countOfLost = 0;
+            //List<string> friendList = Console.ReadLine().Split(", ").ToList();
+            //int countOfBlackListed = 0;
+            //int countOfLost = 0;
+            //string input = default;
+            //while ((input = Console.ReadLine()) != "Report")
+            //{
+            //    string[] command = input.Split(' ');
+            //    if (command[0] == "Blacklist")
+            //    {
+            //        string name = command[1];
+            //        bool IsTrue = friendList.Contains(name);
+            //        if (IsTrue == true)
+            //        {
+            //            for (int i = 0; i < friendList.Count; i++)
+            //            {
+            //                if (friendList[i] == name)
+            //                {
+            //                    friendList[i] = "Blacklisted";
+            //                    Console.WriteLine($"{name} was blacklisted.");
+            //                    countOfBlackListed++;
+            //                }
+            //            }
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine($"{name} was not found.");
+            //        }
+            //    }
+
+            //}
+
+            List<string> phones = Console.ReadLine().Split(", ").ToList();
+
             string input = default;
-            while ((input = Console.ReadLine()) != "Report")
+            while ((input = Console.ReadLine()) != "End")
             {
                 string[] command = input.Split(' ');
-                if (command[0] == "Blacklist")
+
+                if (command[0] == "Add")
                 {
-                    string name = command[1];
-                    bool IsTrue = friendList.Contains(name);
-                    if (IsTrue == true)
+                    string givenPhone = command[2];
+                    bool exist = phones.Contains(givenPhone);
+                    if (exist == false)
                     {
-                        for (int i = 0; i < friendList.Count; i++)
-                        {
-                            if (friendList[i] == name)
-                            {
-                                friendList[i] = "Blacklisted";
-                                Console.WriteLine($"{name} was blacklisted.");
-                                countOfBlackListed++;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine($"{name} was not found.");
+                        phones.Add(givenPhone);
                     }
                 }
 
+                else if (command[0] == "Remove")
+                {
+                    string givenPhone = command[2];
+                    bool Istrue = phones.Contains(givenPhone);
+                    if (Istrue == true)
+                    {
+                        phones.Remove(givenPhone);
+                    }
+
+                }
+                else if (command[0] == "Bonus")
+                {
+                    string[] splitedCommand = command[3].Split(':');
+                    string oldPhone = splitedCommand[0];
+                    string newPhone = splitedCommand[1];
+                    bool IsFalse = phones.Contains(oldPhone);
+                    if (IsFalse == true)
+                    {
+                        for (int i = 0; i < phones.Count; i++)
+                        {
+                            if (phones[i] == oldPhone)
+                            {
+                                phones.Insert(i + 1, newPhone);
+                            }
+                        }
+                    }
+                }
+                else if (command[0] == "Last")
+                {
+                    string phoneExist = command[2];
+                    bool IsTrue = phones.Contains(phoneExist);
+                    if (IsTrue == true)
+                    {
+                        phones.Remove(phoneExist);
+                        phones.Add(phoneExist);
+                    }
+                }
             }
+            Console.WriteLine(string.Join(", ", phones));
+
+
+
+        }
     }
 }
-
-// 3
-
-
-//List<string> phones = Console.ReadLine().Split(", ").ToList();
-
-//string input = default;
-//while((input = Console.ReadLine()) != "End")
-//{
-//    string[] command = input.Split(' ');
-
-//    if (command[0] == "Add")
-//    {
-//        string givenPhone = command[2];
-//        bool exist = phones.Contains(givenPhone);
-//        if (exist == false)
-//        {
-//            phones.Add(givenPhone);
-//        }
-//    }
-
-//    else if (command[0] == "Remove")
-//    {
-//        string givenPhone = command[2];
-//        bool Istrue = phones.Contains(givenPhone);
-//        if(Istrue == true)
-//        {
-//            phones.Remove(givenPhone);
-//        }
-
-//    }
-//    else if (command[0] == "Bonus")
-//    {
-//        string[] splitedCommand = command[3].Split(':');
-//        string oldPhone = splitedCommand[0];
-//        string newPhone = splitedCommand[1];
-//        bool IsFalse = phones.Contains(oldPhone);
-//        if(IsFalse == true)
-//        {
-//            for (int i = 0; i < phones.Count; i++)
-//            {
-//                if (phones[i] == oldPhone)
-//                {
-//                    phones.Insert(i + 1, newPhone);
-//                }
-//            }
-//        }
-//    }
-//    else if (command[0] == "Last")
-//    {
-//        string phoneExist = command[2];
-//        bool IsTrue = phones.Contains(phoneExist);
-//        if (IsTrue == true)
-//        {
-//            phones.Remove(phoneExist);
-//            phones.Add(phoneExist);
-//        }
-//    }
-//}
-//Console.WriteLine(string.Join(", ", phones));
-
-
-// 2
-
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-// 1
-
-
-//
-//
-//
-//
-//
-//
-//
-
-
-//
-//
-//
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
