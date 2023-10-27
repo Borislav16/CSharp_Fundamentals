@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace _06._StoreBoxes
 {
@@ -6,46 +8,51 @@ namespace _06._StoreBoxes
     {
         static void Main(string[] args)
         {
-            string command = default;
-            while ((command = Console.ReadLine()) != "end")
+            List<Box> boxes = new List<Box>();
+
+            string line = Console.ReadLine();
+
+            while (line != "end")
             {
+                string[] data = line.Split();
+
+                string serialNumber = data[0];
+                string itemName = data[1];
+                int itemQuantity = int.Parse(data[2]);
+                decimal itemPrice = decimal.Parse(data[3]);
+
+                Box box = new Box();
+
+                box.SerialNumber = serialNumber;
+                box.Item = itemName;
+                box.quantity = itemQuantity;
+                box.PriceBox = itemPrice;
+                box.TotalPrice = itemQuantity * itemPrice;
+
+                boxes.Add(box);
+
+                line = Console.ReadLine();
                 
             }
-        }
-    }
+            List<Box> sortedBox = boxes.OrderByDescending(boxes => boxes.TotalPrice).ToList();
 
-    public class Item
-    {
-        public string Name { get; set; }
 
-        public decimal Price { get; set; }
-    }
-    public class Box
-    {
-        public Box()
-        {
-            Item = new Item();
-        }
-        public Box(string serialNumber, Item item, decimal quantity)
-        {
-            SerialNumber = serialNumber;
-            item.Name = item.Name;
-            item.Price = item.Price;
-            Quantity = quantity;
-        }
-
-        public string SerialNumber { get; set; }
-
-        public Item Item { get; set; }
-
-        public decimal Quantity { get; set; }
-
-        public decimal BoxPrice
-        {
-            get
+            foreach (Box a in sortedBox)
             {
-                return Quantity * Item.Price;
+                Console.WriteLine($"{a.SerialNumber}");
+                Console.WriteLine($"-- {a.Item} - ${a.PriceBox:f2}: {a.quantity}");
+                Console.WriteLine($"-- ${a.TotalPrice:f2}");
             }
         }
+    }
+
+    
+    public class Box
+    {
+        public string SerialNumber { get; set; }
+        public string Item { get; set; }
+        public int quantity { get; set; }
+        public decimal PriceBox { get; set; }
+        public decimal TotalPrice { get; set; }
     }
 }
