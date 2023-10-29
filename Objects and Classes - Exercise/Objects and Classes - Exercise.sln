@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. AdvertisementMessage", "01. AdvertisementMessage\01. AdvertisementMessage.csproj", "{E0E092D3-8431-42F8-BEEA-CFEF8D58CEBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. AdvertisementMessage", "01. AdvertisementMessage\01. AdvertisementMessage.csproj", "{E0E092D3-8431-42F8-BEEA-CFEF8D58CEBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Articles", "02. Articles\02. Articles.csproj", "{C2355B6E-2A73-472C-9F05-9A8ECEC3BDE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Articles", "02. Articles\02. Articles.csproj", "{C2355B6E-2A73-472C-9F05-9A8ECEC3BDE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Articles2.0", "03. Articles2.0\03. Articles2.0.csproj", "{BA36ACDE-03EA-458A-B936-3432354EB45A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Articles2.0", "03. Articles2.0\03. Articles2.0.csproj", "{BA36ACDE-03EA-458A-B936-3432354EB45A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Students", "04. Students\04. Students.csproj", "{15583069-6AC7-4BE1-BE90-E78F283DD31E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Students", "04. Students\04. Students.csproj", "{15583069-6AC7-4BE1-BE90-E78F283DD31E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. TeamworkProjects", "05. TeamworkProjects\05. TeamworkProjects.csproj", "{0F4A240C-14D8-40D6-B35A-885D2AB65C5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{15583069-6AC7-4BE1-BE90-E78F283DD31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15583069-6AC7-4BE1-BE90-E78F283DD31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15583069-6AC7-4BE1-BE90-E78F283DD31E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F4A240C-14D8-40D6-B35A-885D2AB65C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4A240C-14D8-40D6-B35A-885D2AB65C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4A240C-14D8-40D6-B35A-885D2AB65C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4A240C-14D8-40D6-B35A-885D2AB65C5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
