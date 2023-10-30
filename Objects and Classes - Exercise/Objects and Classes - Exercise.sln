@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Articles2.0", "03. Arti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. Students", "04. Students\04. Students.csproj", "{15583069-6AC7-4BE1-BE90-E78F283DD31E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. TeamworkProjects", "05. TeamworkProjects\05. TeamworkProjects.csproj", "{0F4A240C-14D8-40D6-B35A-885D2AB65C5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. TeamworkProjects", "05. TeamworkProjects\05. TeamworkProjects.csproj", "{0F4A240C-14D8-40D6-B35A-885D2AB65C5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. VehicleCatalogue", "06. VehicleCatalogue\06. VehicleCatalogue.csproj", "{D15AF4FA-A72C-479B-A8FD-991585714501}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0F4A240C-14D8-40D6-B35A-885D2AB65C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F4A240C-14D8-40D6-B35A-885D2AB65C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F4A240C-14D8-40D6-B35A-885D2AB65C5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D15AF4FA-A72C-479B-A8FD-991585714501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D15AF4FA-A72C-479B-A8FD-991585714501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D15AF4FA-A72C-479B-A8FD-991585714501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D15AF4FA-A72C-479B-A8FD-991585714501}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
