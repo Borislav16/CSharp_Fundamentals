@@ -55,14 +55,14 @@ namespace _05._TeamworkProjects
                 string creatorName = teamCommands[0];
                 Team team = new Team(teamName, creatorName);
 
-                Team sameTeamFound = teams.Find(t => t.Name == teamName);
+                Team sameTeamFound = teams.Find(t => t.Name == team.Name);
                 if (sameTeamFound != null)
                 {
                     Console.WriteLine($"Team {sameTeamFound.Name} was already created!");
                     continue;
                 }
 
-                Team sameCreatorFound = teams.Find(t => t.Creator ==  creatorName);
+                Team sameCreatorFound = teams.Find(t => t.Creator ==  team.Creator);
                 if (sameCreatorFound != null)
                 {
                     Console.WriteLine($"{sameCreatorFound.Creator} cannot create another team!");
@@ -71,7 +71,7 @@ namespace _05._TeamworkProjects
 
 
                 teams.Add(team);
-                Console.WriteLine($"Team {teamName} has been created by {creatorName}!");
+                Console.WriteLine($"Team {team.Name} has been created by {team.Creator}!");
             }
 
             string command;
@@ -83,7 +83,7 @@ namespace _05._TeamworkProjects
                 string teamName = arguments[1];
 
                 bool hasAnyTeamWithSameName = teams.Any(t => t.Name == teamName);
-                if(hasAnyTeamWithSameName == true)
+                if(hasAnyTeamWithSameName == false)
                 {
                     Console.WriteLine($"Team {teamName} does not exist!");
                     continue;
@@ -93,6 +93,7 @@ namespace _05._TeamworkProjects
                        teams.Any(team => team.Member.Contains(joinerName)))
                 {
                     Console.WriteLine($"Member {joinerName} cannot join team {teamName}!");
+                    continue;
                 }
 
                 teams.FirstOrDefault(t => t.Name == teamName).Member.Add(joinerName);
@@ -100,12 +101,14 @@ namespace _05._TeamworkProjects
             }
 
             List<Team> leftTeams = teams.Where(t => t.Member.Count > 0).ToList();
-            List<Team> disbandTeams = teams.Where(t => t.Member.Count <= 0).ToList();
             List<Team> orderedTeams = leftTeams.OrderByDescending(t => t.Member.Count).ThenBy(t => t.Name).ToList();
 
             orderedTeams.ForEach(team => Console.WriteLine(team));
 
+            List<Team> disbandTeams = teams.Where(t => t.Member.Count <= 0).ToList();
+
             Console.WriteLine("Teams to disband:");
+
             disbandTeams = disbandTeams.OrderBy(t => t.Name).ToList();
 
             disbandTeams.ForEach(team => Console.WriteLine(team));
