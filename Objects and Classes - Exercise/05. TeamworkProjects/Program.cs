@@ -20,14 +20,24 @@ namespace _05._TeamworkProjects
 
         public override string ToString()
         {
+            return $"{Name}\n" +
+                   $"- {Creator}\n" +
+                   $"{GetMembersString()}";
+        }
+        private string GetMembersString()
+        {
+            Members = Members
+                .OrderBy(name => name)
+                .ToList();
+
             string result = "";
-            result += Name + "\n";
-            result += $"- {Creator}\n";
-            foreach (string member in Members)
+            for (int i = 0; i < Members.Count - 1; i++)
             {
-                result += $"-- {member}\n";
+                result += $"-- {Members[i]}\n";
             }
-            return result.Trim();
+
+            result += $"-- {Members[Members.Count - 1]}";
+            return result;
         }
     }
     internal class Program
@@ -39,26 +49,26 @@ namespace _05._TeamworkProjects
             int teamsCount = int.Parse(Console.ReadLine());
             for (int i = 0; i < teamsCount; i++)
             {
-                string creatorTeamString = Console.ReadLine();
-                string[] arguments = creatorTeamString.Split("-");
-                string creatorName = arguments[0];
+                string[] arguments = Console.ReadLine().Split("-");
                 string teamName = arguments[1];
+                string creatorName = arguments[0];
 
-
-                Team sameCreator = teams.Find(team => team.Creator == creatorName);
-                if (sameCreator != null)
-                {
-                    Console.WriteLine($"{creatorName} cannot create another team!");
-                }
+                Team team = new Team(teamName, creatorName);
                 Team sameTeam = teams.Find(team => team.Name == teamName);
+                Team sameCreator = teams.Find(team => team.Creator == creatorName);
+
                 if (sameTeam != null)
                 {
                     Console.WriteLine($"Team {sameTeam.Name} was already created!");
                     continue;
                 }
+                if (sameCreator != null)
+                {
+                    Console.WriteLine($"{creatorName} cannot create another team!");
+                    continue;
+                }
 
 
-                Team team = new Team(teamName, creatorName);
                 teams.Add(team);
 
 
@@ -90,7 +100,7 @@ namespace _05._TeamworkProjects
             }
 
             List<Team> validTeams = teams.FindAll(team => team.Members.Count > 0);
-            List<Team> disbandTeams = teams.FindAll(team => team.Members.Count == 0);
+            List<Team> disbandTeams = teams.FindAll(team => team.Members.Count <= 0);
 
             validTeams = validTeams.OrderByDescending(team => team.Members.Count).ThenBy(team => team.Name).ToList();
 
