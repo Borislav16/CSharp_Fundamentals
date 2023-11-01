@@ -72,42 +72,21 @@ namespace _05._TeamworkProjects
                 string memberName = arguments[0];
                 string teamName = arguments[1];
 
-                Team exist = null;
-                foreach (Team team in teams)
+                if(!teams.Any(t => t.Name == teamName))
                 {
-                    if (team.Members.Contains(memberName))
-                    {
-                        exist = team;
-                        break;
-                    }
+                    Console.WriteLine($"Team {teamName} does not exist!");
+                    continue;
                 }
 
-
-                if (exist != null)
+                if(teams.Any(t => t.Creator == memberName) ||
+                    teams.Any(t => t.Members.Contains(memberName)))
                 {
                     Console.WriteLine($"Member {memberName} cannot join team {teamName}!");
                     continue;
-
                 }
-
 
                 Team foundTeam = teams.Find(team => team.Name == teamName);
-                if (foundTeam != null)
-                {
-                    if (foundTeam.Creator == memberName)
-                    {
-                        Console.WriteLine($"Member {memberName} cannot join team {teamName}!");
-                    }
-                    else
-                    {
-                        foundTeam.Members.Add(memberName);
-
-                    }
-                }
-                else
-                {
-                    Console.WriteLine($"Team {teamName} does not exist!");
-                }
+                foundTeam.Members.Add(memberName);
             }
 
             List<Team> validTeams = teams.FindAll(team => team.Members.Count > 0);
