@@ -44,7 +44,6 @@ namespace _05._TeamworkProjects
                 string creatorName = arguments[0];
                 string teamName = arguments[1];
 
-                Team team = new Team(teamName, creatorName);
 
                 Team sameCreator = teams.Find(team => team.Creator == creatorName);
                 if (sameCreator != null)
@@ -59,6 +58,7 @@ namespace _05._TeamworkProjects
                 }
 
 
+                Team team = new Team(teamName, creatorName);
                 teams.Add(team);
 
 

@@ -6,7 +6,7 @@ namespace _06._VehicleCatalogue
 {
     class Catalogue
     {
-        public Catalogue(string type, string model, string color, double horsepower)
+        public Catalogue(string type, string model, string color, decimal horsepower)
         {
             Type = type;
             Model = model;
@@ -15,25 +15,40 @@ namespace _06._VehicleCatalogue
 
         }
 
-        public string Type { get; set; }
+        private string type = ""; 
+
+        public string Type
+        {
+            get
+            {
+                return type;
+            }
+            set
+            {
+                type = Capitalize(value);
+            }
+        }
         public string Model { get; set; }
         public string Color { get; set; }
-        public double Horsepower { get; set; }
+        public decimal Horsepower { get; set; }
+
+        public string Capitalize(string value)
+        {
+            char[] charArray = value.ToCharArray();
+            if (char.IsLower(charArray[0]))
+            {
+                charArray[0] = char.ToUpper(charArray[0]); 
+            }
+            return new string(charArray);
+        }
 
         public override string ToString()
         {
-            if(Type == "truck")
-            {
-                Type = "Truck";
-            }
-            else
-            {
-                Type = "Car";
-            }
-            return $"Type: {Type}\n"+
-                   $"Model: {Model}\n"+
-                   $"Color: {Color}\n"+
-                   $"Horsepower: {Horsepower}\n";
+            
+            return $"Type: {Type}\n" +
+                   $"Model: {Model}\n" +
+                   $"Color: {Color}\n" +
+                   $"Horsepower: {Horsepower}";
         }
     }
     internal class Program
@@ -41,50 +56,49 @@ namespace _06._VehicleCatalogue
         static void Main(string[] args)
         {
             List<Catalogue> list = new List<Catalogue>();
-            string command = string.Empty;
-            double averageTruckHorsepower = 0;
-            int countOfTruck = 0;
-            double averageCarHorsepower = 0;
-            int countOfCar = 0;
+
+            string command;
             while ((command = Console.ReadLine()) != "End")
             {
                 string[] vehicles = command.Split(" ");
                 string type = vehicles[0];
                 string model = vehicles[1];
                 string color = vehicles[2];
-                double horsepower = double.Parse(vehicles[3]);
+                decimal horsepower = decimal.Parse(vehicles[3]);
 
                 Catalogue catalogue = new Catalogue(type, model, color, horsepower);
-
-                if(type == "truck")
-                {
-                    averageTruckHorsepower += horsepower;
-                    countOfTruck++;
-                }
-                else
-                {
-                    averageCarHorsepower += horsepower;
-                    countOfCar++;
-                }
                 list.Add(catalogue);
-                
+
             }
-            averageTruckHorsepower = averageTruckHorsepower / countOfTruck;
-            averageCarHorsepower = averageCarHorsepower / countOfCar;
-            while((command = Console.ReadLine()) != "Close the Catalogue")
+
+            while ((command = Console.ReadLine()) != "Close the Catalogue")
             {
                 foreach (Catalogue mod in list)
                 {
-                    if(mod.Model == command)
+                    if (mod.Model == command)
                     {
                         Console.WriteLine(mod.ToString());
                     }
                 }
             }
-            Console.WriteLine($"Cars have average horsepower of: {averageCarHorsepower:F2}.");
-            Console.WriteLine($"Trucks have average horsepower of: {averageTruckHorsepower:F2}.");
+            decimal averageHP = list.
+                Where(catalogue => catalogue.Type == "Car")
+                .Select(catalogue => catalogue.Horsepower)
+                .DefaultIfEmpty()
+                .Average();
 
-            
+            Console.WriteLine($"Cars have average horsepower of: {averageHP:F2}.");
+
+            averageHP = list.
+                Where(catalogue => catalogue.Type == "Truck")
+                .Select(catalogue => catalogue.Horsepower)
+                .DefaultIfEmpty()
+                .Average();
+
+            Console.WriteLine($"Trucks have average horsepower of: {averageHP:F2}.");
+
+
+
         }
     }
 }
