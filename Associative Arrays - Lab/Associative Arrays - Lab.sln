@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. CountRealNumbers", "01. CountRealNumbers\01. CountRealNumbers.csproj", "{20579FC6-F086-4974-868F-DEA7FCE072AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. CountRealNumbers", "01. CountRealNumbers\01. CountRealNumbers.csproj", "{20579FC6-F086-4974-868F-DEA7FCE072AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. OddOccurrences", "02. OddOccurrences\02. OddOccurrences.csproj", "{346A02F2-D9E3-4EDE-B589-639B33B8BF96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. OddOccurrences", "02. OddOccurrences\02. OddOccurrences.csproj", "{346A02F2-D9E3-4EDE-B589-639B33B8BF96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. WordSynonyms", "03. WordSynonyms\03. WordSynonyms.csproj", "{66D5FCBE-D602-479D-B0A6-3AA71E8708B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{346A02F2-D9E3-4EDE-B589-639B33B8BF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{346A02F2-D9E3-4EDE-B589-639B33B8BF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{346A02F2-D9E3-4EDE-B589-639B33B8BF96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D5FCBE-D602-479D-B0A6-3AA71E8708B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D5FCBE-D602-479D-B0A6-3AA71E8708B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D5FCBE-D602-479D-B0A6-3AA71E8708B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D5FCBE-D602-479D-B0A6-3AA71E8708B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
