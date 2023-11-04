@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. CountCharsInAString", "01. CountCharsInAString\01. CountCharsInAString.csproj", "{7D1BE5D8-4791-4F3C-912E-FE58CFBF2F84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. AMinerTask", "02. AMinerTask\02. AMinerTask.csproj", "{88C8E359-FB0B-48E7-ACC7-08F9DF29A8AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7D1BE5D8-4791-4F3C-912E-FE58CFBF2F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D1BE5D8-4791-4F3C-912E-FE58CFBF2F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D1BE5D8-4791-4F3C-912E-FE58CFBF2F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88C8E359-FB0B-48E7-ACC7-08F9DF29A8AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88C8E359-FB0B-48E7-ACC7-08F9DF29A8AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88C8E359-FB0B-48E7-ACC7-08F9DF29A8AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88C8E359-FB0B-48E7-ACC7-08F9DF29A8AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
