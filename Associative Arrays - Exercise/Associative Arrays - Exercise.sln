@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. AMinerTask", "02. AMine
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. Orders", "03. Orders\03. Orders.csproj", "{A17B648F-D2C1-4DFF-9268-4F610890EFA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. SoftUniParking", "04. SoftUniParking\04. SoftUniParking.csproj", "{F97DC865-E0D9-4CA0-9939-5E95B1091DEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. SoftUniParking", "04. SoftUniParking\04. SoftUniParking.csproj", "{F97DC865-E0D9-4CA0-9939-5E95B1091DEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Courses", "05. Courses\05. Courses.csproj", "{4F94491C-09BE-4288-9653-4FDFAD0A3A73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F97DC865-E0D9-4CA0-9939-5E95B1091DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F97DC865-E0D9-4CA0-9939-5E95B1091DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F97DC865-E0D9-4CA0-9939-5E95B1091DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F94491C-09BE-4288-9653-4FDFAD0A3A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F94491C-09BE-4288-9653-4FDFAD0A3A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F94491C-09BE-4288-9653-4FDFAD0A3A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F94491C-09BE-4288-9653-4FDFAD0A3A73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
