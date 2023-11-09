@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. ReverseStrings", "01. R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. RepeatStrings", "02. RepeatStrings\02. RepeatStrings.csproj", "{9953B57B-CD78-46A9-93CB-2D92F202D8CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Substring", "03. Substring\03. Substring.csproj", "{7422946D-E2CB-43E2-801E-CAD894D98577}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9953B57B-CD78-46A9-93CB-2D92F202D8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9953B57B-CD78-46A9-93CB-2D92F202D8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9953B57B-CD78-46A9-93CB-2D92F202D8CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7422946D-E2CB-43E2-801E-CAD894D98577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7422946D-E2CB-43E2-801E-CAD894D98577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7422946D-E2CB-43E2-801E-CAD894D98577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7422946D-E2CB-43E2-801E-CAD894D98577}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
