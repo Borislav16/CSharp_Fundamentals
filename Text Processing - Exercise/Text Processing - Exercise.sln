@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. ValidUsernames", "01. ValidUsernames\01. ValidUsernames.csproj", "{688C965D-97DA-4AE5-9E1B-EADF70B884E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. ValidUsernames", "01. ValidUsernames\01. ValidUsernames.csproj", "{688C965D-97DA-4AE5-9E1B-EADF70B884E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. CharacterMultiplier", "02. CharacterMultiplier\02. CharacterMultiplier.csproj", "{AB624A4C-8C2C-4527-AB2E-8D7B65F98DD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. CharacterMultiplier", "02. CharacterMultiplier\02. CharacterMultiplier.csproj", "{AB624A4C-8C2C-4527-AB2E-8D7B65F98DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. ExtractFile", "03. ExtractFile\03. ExtractFile.csproj", "{C06B288F-92B7-4555-953E-E28A797C9F34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AB624A4C-8C2C-4527-AB2E-8D7B65F98DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB624A4C-8C2C-4527-AB2E-8D7B65F98DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB624A4C-8C2C-4527-AB2E-8D7B65F98DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C06B288F-92B7-4555-953E-E28A797C9F34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C06B288F-92B7-4555-953E-E28A797C9F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C06B288F-92B7-4555-953E-E28A797C9F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C06B288F-92B7-4555-953E-E28A797C9F34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
