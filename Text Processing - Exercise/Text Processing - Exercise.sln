@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03. ExtractFile", "03. Extr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04. CaesarCipher", "04. CaesarCipher\04. CaesarCipher.csproj", "{6AE60AF8-E287-463A-A3A2-70D7E7B2065D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. MultiplyBigNumber", "05. MultiplyBigNumber\05. MultiplyBigNumber.csproj", "{CD7305BB-1A95-4059-B76C-716C9F11F6D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. MultiplyBigNumber", "05. MultiplyBigNumber\05. MultiplyBigNumber.csproj", "{CD7305BB-1A95-4059-B76C-716C9F11F6D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. ReplaceRepeatingChars", "06. ReplaceRepeatingChars\06. ReplaceRepeatingChars.csproj", "{C33077E4-7916-42B2-8C8C-B080B2638035}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{CD7305BB-1A95-4059-B76C-716C9F11F6D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD7305BB-1A95-4059-B76C-716C9F11F6D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD7305BB-1A95-4059-B76C-716C9F11F6D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C33077E4-7916-42B2-8C8C-B080B2638035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C33077E4-7916-42B2-8C8C-B080B2638035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C33077E4-7916-42B2-8C8C-B080B2638035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C33077E4-7916-42B2-8C8C-B080B2638035}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
