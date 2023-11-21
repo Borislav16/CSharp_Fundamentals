@@ -5,7 +5,9 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01. Furniture", "01. Furniture\01. Furniture.csproj", "{39519E5B-165A-4BDE-B2C7-C02B47965EBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Race", "02. Race\02. Race.csproj", "{ECB959A8-A060-4CF7-89C7-946DA9B5F0DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02. Race", "02. Race\02. Race.csproj", "{ECB959A8-A060-4CF7-89C7-946DA9B5F0DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. SoftUniBarIncome", "03. SoftUniBarIncome\03. SoftUniBarIncome.csproj", "{B7566519-E69C-49A0-822E-7A81F34A3677}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{ECB959A8-A060-4CF7-89C7-946DA9B5F0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECB959A8-A060-4CF7-89C7-946DA9B5F0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECB959A8-A060-4CF7-89C7-946DA9B5F0DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7566519-E69C-49A0-822E-7A81F34A3677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7566519-E69C-49A0-822E-7A81F34A3677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7566519-E69C-49A0-822E-7A81F34A3677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7566519-E69C-49A0-822E-7A81F34A3677}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
