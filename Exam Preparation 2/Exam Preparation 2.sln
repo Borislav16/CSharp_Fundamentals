@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. EmojiDetector", "05. Em
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. HeroesOfCodeAndLogicVII", "06. HeroesOfCodeAndLogicVII\06. HeroesOfCodeAndLogicVII.csproj", "{44A0C6D3-5187-4B51-B1BB-E463D0A22EC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. MirrorWords", "07. MirrorWords\07. MirrorWords.csproj", "{C0E3694B-F4D5-4B89-8F16-C76B6D6B87BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. MirrorWords", "07. MirrorWords\07. MirrorWords.csproj", "{C0E3694B-F4D5-4B89-8F16-C76B6D6B87BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Final Exam", "08. Final Exam\08. Final Exam.csproj", "{80AC826C-8E3C-4ACB-B643-DDB506B4B882}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{C0E3694B-F4D5-4B89-8F16-C76B6D6B87BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0E3694B-F4D5-4B89-8F16-C76B6D6B87BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0E3694B-F4D5-4B89-8F16-C76B6D6B87BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80AC826C-8E3C-4ACB-B643-DDB506B4B882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80AC826C-8E3C-4ACB-B643-DDB506B4B882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80AC826C-8E3C-4ACB-B643-DDB506B4B882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80AC826C-8E3C-4ACB-B643-DDB506B4B882}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
