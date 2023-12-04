@@ -12,6 +12,8 @@ namespace _08._Final_Exam
     {
         static void Main(string[] args)
         {
+
+            //1
             string input = Console.ReadLine();
             string command = string.Empty;
             while ((command = Console.ReadLine()) != "Done")
@@ -69,9 +71,6 @@ namespace _08._Final_Exam
                 }
 
             }
-
-
-
 
         }
     }
